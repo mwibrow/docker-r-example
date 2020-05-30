@@ -23,7 +23,7 @@ This will:
 specified in first line of the `Dockerfile`
 (currently `4.0.0`)
 - install the [versions](https://cran.r-project.org/web/packages/versions/index.html) package
-- copy the [requirements.R] file in to the container, and execute it using `Rscript`
+- copy the `requirements.R` file in to the container, and execute it using `Rscript`
 - Create a user called `default`, and set up a home directory
 - Copy the contents of the `scripts` directory into the home directory
 
