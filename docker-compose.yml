@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  jupyter-r: 
+    
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: jupyter notebook --NotebookApp.token="" --ip=0.0.0.0 --port=8080
+    image: jupyter-r
+    container_name: jupyter-r
+    ports: 
+      - "8888:8080"
+    volumes: 
+      - "./analysis:/usr/home/r-user/analysis"
+
+
